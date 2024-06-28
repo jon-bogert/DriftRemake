@@ -117,9 +117,6 @@ float Drift(float2 uv, float2 dimensions, float radius, float maxlength, float2 
 
 float4 PS(VS_OUTPUT input) : SV_Target
 {
-    float u = input.uv.x;
-    float v = input.uv.y;
-    
     float2 scrollX = { time * movementTimeScale, 0 };
     float2 scrollY = { 0, time * movementTimeScale };
     
